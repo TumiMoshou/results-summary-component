@@ -1,0 +1,240 @@
+
+/* Define font faces for different weights of Hanken Grotesk */
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+/* Set default font for the body */
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Styles for the summary section */
+.summary-section {
+    background: hsl(0, 0%, 100%);
+    color: hsl(224, 30%, 27%);
+    text-align: left; 
+    padding: 20px; 
+    position: relative;
+}
+
+/* Styles for the summary content */
+.summary-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+/* Styles for individual elements inside summary section */
+.reaction-el, .memory-el, .verbal-el, .visual-el {
+    width: calc(100% - 30px);
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+/* Styles for the icons */
+.reaction-el svg,
+.memory-el svg,
+.verbal-el svg,
+.visual-el svg {
+    margin-right: 10px;
+    margin-top: 3px; 
+}
+
+/* Styles for the labels and numbers */
+.reaction-el p, .memory-el p, .verbal-el p, .visual-el p,
+.reaction-el span, .memory-el span, .verbal-el span, .visual-el span {
+    margin: 0;
+    text-align: left;
+}
+
+/* Adjust the margin-left for the spans */
+.reaction-el span, .memory-el span, .verbal-el span, .visual-el span {
+    margin-left: auto;
+}
+
+/* Styles for the color labels */
+
+.reaction-color {
+    color: #FF5555;
+}
+
+.memory-color {
+    color: #FFB21E;
+}
+
+.verbal-color {
+    color: #00BB8F;
+}
+
+.visual-color {
+    color: #1125D6;
+}
+
+/* Styles for the hundred color */
+.hundred-color {
+    opacity: 0.5;
+}
+
+/* Styles for the button */
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: none; 
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 15px 100px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover state for the button */
+button:hover {
+    background-color: #7755FF;
+}
+
+/* Specific background colors for each summary article */
+.reaction-el {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+}
+
+.memory-el {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+}
+
+.verbal-el {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+}
+
+.visual-el {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+}
+
+/* Flex container styles */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles for the result section */
+.result-heading {
+    font-size: 24px;
+    font-weight: 500;
+    color: #CAC9FF;
+}
+
+.result-num1 {
+    font-size: 72px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.result-num2 {
+    font-size: 18px;
+    color: #CAC9FF;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+/* Styles for the oval container */
+.oval-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styles for the oval */
+.oval {
+    position: absolute;
+    left: -70%; 
+    top: 6%; 
+    width: 200px; 
+    height: 200px; 
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    border-radius: 50%; 
+    z-index: 1; 
+}
+
+/* Styles for the result section */
+.result-section {
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.summary-heading {
+    color: hsl(224, 30%, 27%);
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+
+/* Styles for section headings */
+.result-heading, .summary-heading {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Adjust the positioning of the numbers */
+.result-num1, .result-num2 {
+    position: relative;
+    z-index: 2; 
+}
+
+.great-heading {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.paragraph-el {
+    font-size: 18px;
+    color: #CAC9FF;
+}
+
+.result-section, .summary-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+    .result-section, .summary-section {
+        margin-right: 0; 
+    }
+}
