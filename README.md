@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/yourusername/yourrepository)
-- Live Site URL: [Netlify live site URL](https://yoursitename.netlify.app)
+- Live Site URL: [Netlify live site URL](https://singular-druid-d1898e.netlify.app/)
 
 ## My process
 
@@ -42,4 +42,4 @@ I learned how to use semantic HTML elements effectively and improve accessibilit
 
 ## Author
 
-- GitHub - [TumiMoshou](https://github.com/yourusername)
+- GitHub - [TumiMoshou](https://github.com/TumiMoshou)
