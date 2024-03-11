@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/yourusername/yourrepository)
+- Solution URL: [Solution URL](https://github.com/TumiMoshou/results-summary-component)
 - Live Site URL: [Netlify live site URL](https://singular-druid-d1898e.netlify.app/)
 
 ## My process
